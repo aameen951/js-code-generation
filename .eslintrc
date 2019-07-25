@@ -1,0 +1,41 @@
+{
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "globals": {
+    "require": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2018,
+    "ecmaFeatures": {
+    },
+    "env":{
+      "es6":true
+    }
+  },
+  "rules": {
+    "indent": [
+      "off",
+      2
+    ],
+    "linebreak-style": [
+      "warn",
+      "windows"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-console":"off",
+    "no-unused-vars":[
+      "warn", 
+      {"args":"none"}
+    ],
+    "no-debugger":"warn",
+    "no-constant-condition":"off",
+    "no-empty": ["off"]
+  }
+}
