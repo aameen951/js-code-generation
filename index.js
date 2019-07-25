@@ -13,7 +13,7 @@ class JsCodeGeneration
     this.watcher.on("aggregated", this.onFileChange.bind(this));
   }
   addGenerator(name){
-    this.generators.push(name);
+    this.generators.push(require(name));
   }
   async onFileChange(changes, removals){
     await this.compile();
