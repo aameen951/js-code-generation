@@ -8,6 +8,7 @@ class CodeGenerationCtx
     this.output_dir = gen_dir;
 
     this.dependencies = new Set();
+    fs.ensureDirExists(this.output_dir);
   }
   getGenOutputPath(rel_path)
   {

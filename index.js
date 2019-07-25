@@ -1,6 +1,7 @@
 
 const WatchPack = require("watchpack");
 const CodeGenerationCtx = require("./code-generation-ctx");
+const path = require('path');
 
 class JsCodeGeneration
 {
@@ -13,7 +14,8 @@ class JsCodeGeneration
     this.watcher.on("aggregated", this.onFileChange.bind(this));
   }
   addGenerator(name){
-    this.generators.push(require(name));
+    const g_path = path.resolve(this.project_dir, name);
+    this.generators.push(require(g_path));
   }
   async onFileChange(changes, removals){
     await this.compile();

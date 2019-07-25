@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Utilities that allow to generate javascript code",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "node tests/main.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/aameen951/js-code-generation.git"
