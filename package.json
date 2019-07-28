@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/aameen951/js-code-generation#readme",
   "dependencies": {
+    "promise-fs": "github:aameen951/promise-fs#v1.0",
     "watchpack": "^1.6.0"
   }
 }
